@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+  <script>
+    const clientId = "1e13f9ndiber9kat6aos0nd1ta";
+    const domain = "us-east-17mcn6ojbb.auth.us-east-1.amazoncognito.com";
+    const redirectUri = "http://lostfound-portal-frontend.s3-website-us-east-1.amazonaws.com";
+
+    // When the site loads → redirect to Cognito Login
+    window.location.href = 
+      `https://${domain}/login?client_id=${clientId}&response_type=code&scope=openid&redirect_uri=${redirectUri}`;
+  </script>
+</head>
+<body>
+  Redirecting to Sign In...
+</body>
+</html>
